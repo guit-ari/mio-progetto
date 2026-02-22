@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dotblue</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./images/dotblue-logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./images/dotblue-logo.png" alt="DotBlue Logo" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">Chi Siamo</a></li>
+          <li><a href="#services">Software</a></li>
+          <li><a href="#careers">Lavora con noi</a></li>
+          <li><a href="#contact" class="btn-nav">Contatti</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <h1>Evoluzione digitale per l' <br /><span class="gradient-text">Energy & Utility.</span></h1>
+        <p>Trasformiamo la complessità dei dati in flussi operativi snelli, sicuri e scalabili.</p>
+      </div>
+    </header>
+
+    <section id="services" class="software-suite reveal">
+      <div class="container">
+        <div class="software-header">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-number">70+</span>
+              <span class="stat-label">Clienti Corporate</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3M+</span>
+              <span class="stat-label">Utenti Loggati</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">21M+</span>
+              <span class="stat-label">Fatture Gestite</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-grid">
+          <div class="product-card clickable" onclick="scrollToProduct('energydeal')">
+            <div class="product-icon"><i class="bx bx-edit-alt"></i></div>
+            <h3>Energy Deal</h3>
+            <p>Contrattualizzazione remota e firma digitale.</p>
+            <span class="read-more">Dettagli <i class="bx bx-down-arrow-alt"></i></span>
+          </div>
+          <div class="product-card clickable" onclick="scrollToProduct('dotbot')">
+            <div class="product-icon"><i class="bx bx-bot"></i></div>
+            <h3>DotBot</h3>
+            <p>AI Generativa verticale per le Utility.</p>
+            <span class="read-more">Dettagli <i class="bx bx-down-arrow-alt"></i></span>
+          </div>
+          <div class="product-card clickable" onclick="scrollToProduct('risoluto')">
+            <div class="product-icon"><i class="bx bx-check-shield"></i></div>
+            <h3>Risoluto</h3>
+            <p>Automazione gestione insoluti e riscossione.</p>
+            <span class="read-more">Dettagli <i class="bx bx-down-arrow-alt"></i></span>
+          </div>
+          <div class="product-card clickable" onclick="scrollToProduct('userapp')">
+            <div class="product-icon"><i class="bx bx-user-circle"></i></div>
+            <h3>User & App</h3>
+            <p>Lo sportello digitale web e mobile.</p>
+            <span class="read-more">Dettagli <i class="bx bx-down-arrow-alt"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-detail reveal">
+      <div class="container">
+        <div class="product-showcase" id="energydeal">
+          <div class="product-info">
+            <div class="product-tag">Sales Automation</div>
+            <h3>Energy Deal</h3>
+            <p class="description">Gestisce la contrattualizzazione e la gestione dell’utenza da remoto e totalmente in digitale. Integra la sicurezza dei documenti e la firma digitale.</p>
+            <ul class="feature-list">
+              <li><i class="bx bx-check-circle"></i> Contratti da remoto per agenti</li>
+              <li><i class="bx bx-lock-alt"></i> Firma Digitale integrata</li>
+              <li><i class="bx bx-leaf"></i> Zero carta, 100% efficienza</li>
+            </ul>
+            <div class="product-cta">
+              <a href="mailto:sales@dotblue.it" class="btn-primary">Richiedi Informazioni</a>
+            </div>
+          </div>
+          <div class="product-visual">
+            <div class="mockup-container energy-bg">
+              <img src="./images/ed.png" alt="Energy Deal Interface" class="product-img-fluid" />
+            </div>
+          </div>
+        </div>
+
+        <div class="product-showcase reverse" id="dotbot">
+          <div class="product-info">
+            <div class="product-tag">Generative AI</div>
+            <h3>DotBot</h3>
+            <p class="description">Assistente virtuale avanzato verticale sulle Utility. Basato su AI Generativa, risponde in modo naturale e immediato su WhatsApp.</p>
+            <ul class="feature-list">
+              <li><i class="bx bxl-whatsapp"></i> Customer care su WhatsApp</li>
+              <li><i class="bx bx-time"></i> Disponibile H24 7/7</li>
+            </ul>
+            <a href="https://www.canaleenergia.com/rubriche/green-economy/customer-service-per-utility-ecco-dotbot-chatbot-whatsapp-con-ai/" target="_blank" class="btn-primary">Leggi l'articolo</a>
+          </div>
+          <div class="product-visual">
+            <div class="mockup-container bot-bg">
+              <div class="chat-bubble">Ciao! Come posso aiutarti?</div>
+              <div class="chat-bubble client">Autolettura</div>
+              <img src="./images/dotbot.png" alt="DotBot" class="product-img-fluid" />
+            </div>
+          </div>
+        </div>
+
+        <div class="product-showcase" id="risoluto">
+          <div class="product-info">
+            <div class="product-tag">Credit Management</div>
+            <h3>Risoluto</h3>
+            <p class="description">La soluzione per gli insoluti. Un software in cloud che automatizza l’invio delle comunicazioni finalizzate alla riscossione del credito massiva.</p>
+            <div class="plus-grid">
+              <div class="plus-item"><strong>Risparmio</strong> costi operativi</div>
+              <div class="plus-item"><strong>Efficacia</strong> riscossione</div>
+              <div class="plus-item"><strong>GDPR</strong> Compliant</div>
+            </div>
+            <ul class="feature-list">
+              <li><i class="bx bx-archive"></i> Digitalizzazione archivi</li>
+              <li><i class="bx bx-bolt-circle"></i> Automazione flussi</li>
+            </ul>
+          </div>
+          <div class="product-visual">
+            <div class="mockup-container risoluto-bg">
+              <img src="./images/risoluto.png" alt="Risoluto" class="product-img-fluid" />
+            </div>
+          </div>
+        </div>
+
+        <div class="product-showcase reverse" id="userapp">
+          <div class="product-info">
+            <div class="product-tag">Digital Sportello</div>
+            <h3>User & App</h3>
+            <p class="description">Lo sportello digitale per Utility. Permette agli utenti di gestire forniture, pagamenti e autoletture comodamente da Web o App iOS/Android.</p>
+            <div class="app-features-grid">
+              <span><i class="bx bx-receipt"></i> Bollette</span>
+              <span><i class="bx bx-tachometer"></i> Autolettura</span>
+              <span><i class="bx bx-credit-card"></i> Pagamenti</span>
+              <span><i class="bx bx-support"></i> Supporto</span>
+            </div>
+            <p class="plus-text">Integrazione firma digitale per stipula contratti online e tracciabilità totale.</p>
+          </div>
+          <div class="product-visual">
+            <div class="mockup-container app-bg">
+              <img src="./images/user.jpeg" alt="User & App" class="product-img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="identity-section reveal">
+      <div class="container">
+        <div class="mv-container">
+          <div class="mv-box mission" onclick="this.classList.toggle('active')">
+            <span class="small-title">Mission</span>
+            <h3>Passione tecnologica per partnership strategiche.</h3>
+            <p class="expandable-text">Sosteniamo il business dei nostri clienti in modo unico, costruendo partnership basate sulla responsabilità.</p>
+          </div>
+          <div class="mv-box vision">
+            <span class="small-title">Vision</span>
+            <h2>"Dove c'è un dato da gestire, c'è <span class="gradient-text">dotblue</span>."</h2>
+          </div>
+        </div>
+
+        <div class="culture-block">
+          <div class="culture-content">
+            <span class="badge-green">Green & Young</span>
+            <h2>Benvenuti in dotblue</h2>
+            <p>Uno spazio dove il design incontra la sostenibilità e l'esperienza incontra l'innovazione.</p>
+          </div>
+          <div class="culture-image">
+            <img src="https://www.dotblue.it/wp-content/uploads/2025/02/fotoPI.jpeg" alt="dotblue Team" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="careers" class="careers-section reveal">
+      <div class="container">
+        <div class="careers-header">
+          <span class="small-title">Careers</span>
+          <h2>Unisciti al <span class="gradient-text">Team dotblue.</span></h2>
+          <p class="main-p">Costruiamo il futuro delle Utility attraverso codice pulito, design intelligente e persone eccezionali.</p>
+        </div>
+
+        <div class="jobs-container">
+          <div class="job-card">
+            <div class="job-header">
+              <span class="job-tag">Hybrid / Full-time</span>
+              <h3>Full Stack Developer</h3>
+            </div>
+            <p class="job-desc">Sviluppo e mantenimento software core per la gestione utility con architettura .NET e React.</p>
+            <div class="job-details">
+              <div class="detail-group"><strong>Stack:</strong> .NET Core, C#, SQL Server, React.</div>
+              <div class="detail-group"><strong>Plus:</strong> Condivisione conoscenze e approccio collaborativo.</div>
+            </div>
+            <a href="mailto:hr@dotblue.it?subject=Candidatura Full Stack Developer" class="btn-job">Invia Candidatura</a>
+          </div>
+
+          <div class="job-card highlighted">
+            <div class="job-header">
+              <span class="job-tag">App & Mobile</span>
+              <h3>Senior App Developer</h3>
+            </div>
+            <p class="job-desc">Guida lo sviluppo di app cross-platform (iOS/Android) definendo linee guida per codice riutilizzabile.</p>
+            <div class="job-details">
+              <div class="detail-group"><strong>Stack:</strong> Ionic, Angular, Web API, Bootstrap.</div>
+              <div class="detail-group"><strong>Plus:</strong> Esperienza React Native o sviluppo Nativo.</div>
+            </div>
+            <a href="mailto:hr@dotblue.it?subject=Candidatura Senior App Developer" class="btn-job">Invia Candidatura</a>
+          </div>
+
+          <div class="job-card">
+            <div class="job-header">
+              <span class="job-tag">Product & Dev</span>
+              <h3>Software Engineer</h3>
+            </div>
+            <p class="job-desc">Dalla raccolta requisiti alla messa in produzione, lavorando a stretto contatto con il Product Manager.</p>
+            <div class="job-details">
+              <div class="detail-group"><strong>Stack:</strong> Microsoft .NET, C#, SQL Server, VB.</div>
+              <div class="detail-group"><strong>Plus:</strong> EF Core, Dependency Injection, ASP.NET MVC.</div>
+            </div>
+            <a href="mailto:hr@dotblue.it?subject=Candidatura Software Engineer" class="btn-job">Invia Candidatura</a>
+          </div>
+        </div>
+
+        <div class="perks-grid">
+          <div class="perk-item"><i class="bx bx-home-alt"></i> <span>Lavoro Ibrido / Remoto</span></div>
+          <div class="perk-item"><i class="bx bx-book-open"></i> <span>Formazione Continua</span></div>
+          <div class="perk-item"><i class="bx bx-laptop"></i> <span>PC Aziendale</span></div>
+          <div class="perk-item"><i class="bx bx-restaurant"></i> <span>Buoni Pasto</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-box">
+          <span class="small-title">Contatti</span>
+          <h2>Hai un progetto in mente? <br /><span class="gradient-text">Parliamone.</span></h2>
+          <p>Siamo pronti ad ascoltare le tue esigenze e trasformarle in soluzioni digitali concrete.</p>
+
+          <div class="contact-action">
+            <a href="mailto:sales@dotblue.it" class="mail-link">
+              <i class="bx bx-envelope"></i>
+              sales@dotblue.it
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-row main-info">
+            <div class="footer-col">
+              <strong>DOTBLUE S.R.L.</strong><br />
+              P.IVA / C.FISC. 02926210341
+            </div>
+            <div class="footer-col">
+              <strong>Contatti</strong><br />
+              <a href="tel:0521633043">0521 633043</a><br />
+              <a href="mailto:info@dotblue.it">info@dotblue.it</a>
+            </div>
+            <div class="footer-col">
+              <strong>Amministrazione</strong><br />
+              <a href="mailto:amministrazione@dotblue.it">amministrazione@dotblue.it</a>
+            </div>
+          </div>
+
+          <div class="footer-row legal-links">
+            <a href="cookie-policy.html">COOKIE POLICY</a>
+            <a href="privacy-policy.html">PRIVACY POLICY</a>
+            <a href="codice-etico.html">CODICE ETICO</a>
+          </div>
+
+          <div class="footer-row copyright">
+            <p>© 2021 ALL RIGHTS RESERVED</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function scrollToProduct(id) {
+        const element = document.getElementById(id);
+        if (!element) return; 
+
+        const headerOffset = 100;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+
+      function reveal() {
+        const reveals = document.querySelectorAll(".reveal");
+        const windowHeight = window.innerHeight;
+        const elementVisible = 150; 
+
+        reveals.forEach((el) => {
+          const elementTop = el.getBoundingClientRect().top;
+          if (elementTop < windowHeight - elementVisible) {
+            el.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", reveal);
+
+      document.addEventListener("DOMContentLoaded", reveal);
+    </script>
+  </body>
+</html>
