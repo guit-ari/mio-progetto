@@ -44,8 +44,7 @@ body {
 /* BUTTONS */
 .btn-primary { background: var(--accent); color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: 0.3s; display: inline-block; border: none; cursor: pointer;}
 .btn-secondary { border: 1px solid #333; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; transition: 0.3s; display: inline-block; }
-.btn-primary:hover { background: var(--accent-light); transform: translateY(-2px); }
-
+    
 /* SOFTWARE SECTION (GRIGLIA PRODOTTI) */
 .software-suite { padding: 20px 0; background: linear-gradient(180deg, #ffffff 0%, #2a588057 100%); }
 .software-header { text-align: center; margin-bottom: 80px; }
